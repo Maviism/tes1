@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Interaktif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="start-screen" class="screen active">
+            <h1>Selamat Datang di Kuis Kami!</h1>
+            <p>Jawablah pertanyaan dengan benar untuk menguji pengetahuan Anda.</p>
+            <button id="start-btn">Mulai Kuis</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <span class="question-count">Pertanyaan 1/5</span>
+                <span class="score">Skor: 0</span>
+            </div>
+            <div class="question">Pertanyaan akan muncul di sini</div>
+            <div class="options">
+                <!-- Opsi jawaban akan diisi oleh JavaScript -->
+            </div>
+            <button id="next-btn" disabled>Lanjut</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h1>Hasil Kuis Anda</h1>
+            <div class="result-container">
+                <p class="score-text">Skor Anda: <span id="final-score">0</span>/<span id="total-questions">0</span></p>
+                <p class="percentage">Persentase: <span id="percentage">0</span>%</p>
+                <p class="feedback" id="feedback">Feedback akan muncul di sini</p>
+            </div>
+            <button id="restart-btn">Ulangi Kuis</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

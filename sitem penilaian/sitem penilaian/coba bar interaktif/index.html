@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Menu Bar Interaktif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="menu-bar">
+        <div class="logo">MyApp</div>
+        <ul class="menu-items">
+            <li class="active"><a href="#home">Beranda</a></li>
+            <li><a href="#products">Produk</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section id="home" class="page active-page">
+            <h1>Selamat Datang</h1>
+            <p>Ini adalah halaman beranda.</p>
+        </section>
+        <section id="products" class="page">
+            <h1>Produk Kami</h1>
+            <p>Ini adalah halaman produk.</p>
+        </section>
+        <section id="services" class="page">
+            <h1>Layanan Kami</h1>
+            <p>Ini adalah halaman layanan.</p>
+        </section>
+        <section id="about" class="page">
+            <h1>Tentang Kami</h1>
+            <p>Ini adalah halaman tentang kami.</p>
+        </section>
+        <section id="contact" class="page">
+            <h1>Hubungi Kami</h1>
+            <p>Ini adalah halaman kontak.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

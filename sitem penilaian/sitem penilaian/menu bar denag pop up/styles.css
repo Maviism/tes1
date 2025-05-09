@@ -1,0 +1,132 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;
+  }
+  .nav-items {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-items li {
+    position: relative;
+  }
+  .nav-items a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: background 0.2s;
+  }
+  .nav-items a:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  
+  /* Dropdown */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    list-style: none;
+  }
+  .dropdown-menu li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  .dropdown-menu li:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  
+  /* Search in navbar */
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .search input {
+    padding: 0.4rem 0.6rem;
+    border: none;
+    border-radius: 999px;
+  }
+  .search button {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  /* Hero */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #f9d371;
+  }
+  .hero-text p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  .hero-search {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .hero-search input {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 999px;
+    width: 250px;
+  }
+  .hero-search button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Hero icons */
+  .hero-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
